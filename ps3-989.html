@@ -11,7 +11,7 @@ if(fwv==="4.82"){
 	vsh_opd_patch=0x96D5C,
 	vsh_opd_addr=0x6EBB68,
 	vsh_toc_addr_screenshot=0x72057C,
-	vsh_ps3hen_key_toc=0x707774,
+	vsh_hen_key_toc=0x707774,
 	toc_entry1_addr=0x6DA3D0,
 	toc_entry2_addr=0x725A38,
 	toc_entry3_addr=0x6DA3C8,
@@ -56,7 +56,7 @@ if(fwv==="4.84"){
 	vsh_opd_patch=0x96D5C,
 	vsh_opd_addr=0x6EBB70,
 	vsh_toc_addr_screenshot=0x72067C,
-	vsh_ps3hen_key_toc=0x70786C,
+	vsh_hen_key_toc=0x70786C,
 	toc_entry1_addr=0x6DA3D0,
 	toc_entry2_addr=0x725B38,
 	toc_entry3_addr=0x6DA3C8,
@@ -101,7 +101,7 @@ if(fwv==="4.85"){
 	vsh_opd_patch=0x96D5C,
 	vsh_opd_addr=0x6EBB70,
 	vsh_toc_addr_screenshot=0x72067C,
-	vsh_ps3hen_key_toc=0x70786C,
+	vsh_hen_key_toc=0x70786C,
 	toc_entry1_addr=0x6DA3D0,
 	toc_entry2_addr=0x725B38,
 	toc_entry3_addr=0x6DA3C8,
@@ -146,7 +146,7 @@ if((fwv==="4.86")||(fwv==="4.87")||(fwv==="4.88")||(fwv==="4.89")){
 	vsh_opd_patch=0x96D5C,
 	vsh_opd_addr=0x6EBB70,
 	vsh_toc_addr_screenshot=0x72082C,
-	vsh_ps3hen_key_toc=0x707A1C,
+	vsh_hen_key_toc=0x707A1C,
 	toc_entry1_addr=0x6DA3D0,
 	toc_entry2_addr=0x725CE8,
 	toc_entry3_addr=0x6DA3C8,
@@ -215,7 +215,7 @@ var xtra_data,
 	mbytes = 1048576,
 	stat_size_offset = 40,
 	index_key = "DA7D4B5E499A4F53B1C1A14A7484443B",
-	ps3xploit_ecdsa_key = "948DA13E8CAFD5BA0E90CE434461BB327FE7E080475EAA0AD3AD4F5B6247A7FDA86DF69790196773",
+	issaxmodz_ecdsa_key = "948DA13E8CAFD5BA0E90CE434461BB327FE7E080475EAA0AD3AD4F5B6247A7FDA86DF69790196773",
 	flash_partition='xxxxCELL_FS_IOS:BUILTIN_FLSH1',
 	filesystem='CELL_FS_FAT',
 	mount_path='/dev_rewrite',
@@ -224,7 +224,7 @@ var xtra_data,
 	progress_msg_frag2='%</h1>',
 	write_file = "/dev_rewrite/vsh/resource/explore/xmb/category_network.xml",
 	baseURL = window.location.href.replace(/[^/]*$/, ''),
-	write_file_contents='<?xml version="1.0" encoding="UTF-8"?><XMBML version="1.0"><View id="root"><Attributes><Table key="hen"><Pair key="focus_priority"><String>-1</String></Pair></Table></Attributes><Items><Query class="type:x-xmb/folder-pixmap" key="hen" attr="hen" src="#hen_link"/><Query class="type:x-xmb/folder-pixmap" key="seg_premo" src="sel://localhost/nopremo?category_network.xml#seg_premo"/><Query class="type:x-xmb/folder-pixmap" key="seg_browser" src="#seg_browser"/></Items></View><View id="seg_premo"><Items><Item class="type:x-xmb/xmlpremo" key="PRemo" /></Items></View><View id="seg_browser"><Attributes><Table key="browser"><Pair key="icon_rsc"><String>tex_browser</String></Pair><Pair key="icon_notation"><String>WNT_XmbItemBrowser</String></Pair><Pair key="title_rsc"><String>msg_browser</String></Pair></Table></Attributes><Items><Item class="type:x-xmb/xmlwebbrowser" key="browser" attr="browser" /></Items></View><View id="hen_link"><Attributes><Table key="ps3hen_main"><Pair key="icon_rsc"><String>item_tex_Players</String></Pair><Pair key="title"><String>Install HEN</String></Pair><Pair key="info"><String>Downloads and installs the latest HEN Package (Reboot after)</String></Pair></Table></Attributes><Items><Query class="type:x-xmb/folder-pixmap" key="ps3hen_main" attr="ps3hen_main" src="#ps3hen_pkg" /></Items></View><View id="ps3hen_pkg"><Attributes><Table key="ps3hen_link"><Pair key="info"><String>net_package_install</String></Pair><Pair key="pkg_src"><String>'+baseURL+fwv+'/HEN.pkg</String></Pair><Pair key="pkg_src_qa" ><String>'+baseURL+fwv+'/HEN.pkg</String></Pair><Pair key="content_name"><String>msg_install</String></Pair><Pair key="content_id"><String>CUSTOM-INSTALLER_00-0000000000000000</String></Pair><Pair key="prod_pict_path"><String>'+baseURL+'hendl.png</String></Pair></Table></Attributes><Items><Item class="type:x-xmb/xmlnpsignup" key="ps3hen_link" attr="ps3hen_link" /></Items></View></XMBML>';
+	write_file_contents='<?xml version="1.0" encoding="UTF-8"?><XMBML version="1.0"><View id="root"><Attributes><Table key="hen"><Pair key="focus_priority"><String>-1</String></Pair></Table></Attributes><Items><Query class="type:x-xmb/folder-pixmap" key="hen" attr="hen" src="#hen_link"/><Query class="type:x-xmb/folder-pixmap" key="seg_premo" src="sel://localhost/nopremo?category_network.xml#seg_premo"/><Query class="type:x-xmb/folder-pixmap" key="seg_browser" src="#seg_browser"/></Items></View><View id="seg_premo"><Items><Item class="type:x-xmb/xmlpremo" key="PRemo" /></Items></View><View id="seg_browser"><Attributes><Table key="browser"><Pair key="icon_rsc"><String>tex_browser</String></Pair><Pair key="icon_notation"><String>WNT_XmbItemBrowser</String></Pair><Pair key="title_rsc"><String>msg_browser</String></Pair></Table></Attributes><Items><Item class="type:x-xmb/xmlwebbrowser" key="browser" attr="browser" /></Items></View><View id="hen_link"><Attributes><Table key="hen_main"><Pair key="icon_rsc"><String>item_tex_Players</String></Pair><Pair key="title"><String>Install HEN</String></Pair><Pair key="info"><String>Downloads and installs the latest HEN Package (Reboot after)</String></Pair></Table></Attributes><Items><Query class="type:x-xmb/folder-pixmap" key="hen_main" attr="hen_main" src="#hen_pkg" /></Items></View><View id="hen_pkg"><Attributes><Table key="hen_link"><Pair key="info"><String>net_package_install</String></Pair><Pair key="pkg_src"><String>'+baseURL+fwv+'/HEN.pkg</String></Pair><Pair key="pkg_src_qa" ><String>'+baseURL+fwv+'/HEN.pkg</String></Pair><Pair key="content_name"><String>msg_install</String></Pair><Pair key="content_id"><String>CUSTOM-INSTALLER_00-0000000000000000</String></Pair><Pair key="prod_pict_path"><String>'+baseURL+'hendl.png</String></Pair></Table></Attributes><Items><Item class="type:x-xmb/xmlnpsignup" key="hen_link" attr="hen_link" /></Items></View></XMBML>';
 document.write('<html><title>Issa x MoDz - HEN Installer</title><div id="result"></div><div id="exploit"></div><div id="trigger"></div></html>');
 function memcpy(dest,src,len)
 {
@@ -529,7 +529,7 @@ function initROP(init)
 
 		xtra_data=flash_partition.convert()
 		+index_key.convert(true)
-		+ps3xploit_ecdsa_key.convert(true)
+		+issaxmodz_ecdsa_key.convert(true)
 		+filesystem.convert()
 		+mount_path.convert()
 		+write_file.convert()
@@ -549,8 +549,8 @@ function initROP(init)
 
 		flash_partition_addr=xtra_data_addr;
 		index_key_addr=flash_partition_addr+flash_partition.convertedSize()-0x4;
-		ps3xploit_ecdsa_key_addr=index_key_addr+index_key.convertedSize(true);
-		fs_addr=ps3xploit_ecdsa_key_addr+ps3xploit_ecdsa_key.convertedSize(true);
+		issaxmodz_ecdsa_key_addr=index_key_addr+index_key.convertedSize(true);
+		fs_addr=issaxmodz_ecdsa_key_addr+issaxmodz_ecdsa_key.convertedSize(true);
 		mount_path_addr=fs_addr+filesystem.convertedSize();
 
 		write_file_addr=mount_path_addr+mount_path.convertedSize();
@@ -564,9 +564,9 @@ function initROP(init)
 		+store_word(toc_entry1_addr, vsh_opd_patch+4)
 		+store_word(toc_entry3_addr, vsh_opd_patch+4)
 		+store_word(toc_entry5_addr, vsh_opd_patch+4)
-		+store_word(default_vsh_pub_toc, vsh_ps3hen_key_toc)
-		+memcpy(vsh_ps3hen_key_toc-0x20, index_key_addr, (index_key.length/2))
-		+memcpy(vsh_ps3hen_key_toc,ps3xploit_ecdsa_key_addr,(ps3xploit_ecdsa_key.length/2))
+		+store_word(default_vsh_pub_toc, vsh_hen_key_toc)
+		+memcpy(vsh_hen_key_toc-0x20, index_key_addr, (index_key.length/2))
+		+memcpy(vsh_hen_key_toc,issaxmodz_ecdsa_key_addr,(issaxmodz_ecdsa_key.length/2))
 		+syscall(0x345,flash_partition_addr,fs_addr,mount_path_addr,0,0,0,0,0)
 		+save_file_overwrite(write_file_addr,write_filefd_addr,write_file_contents_addr,write_file_readlen_addr,write_file_contents.length,null_addr)
 		+stack_frame_exit();
